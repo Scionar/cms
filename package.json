@@ -13,6 +13,6 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "luxon": "^1.28.0"
+    "luxon": "^2.2.0"
   }
 }
