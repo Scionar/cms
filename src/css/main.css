@@ -237,9 +237,9 @@ footer {
     display: block;
 }
 
-/* Publish date */
+/* Publish date on post */
 
-time {
+.post-time {
     color: var(--color-text-secondary);
     display: block;
     margin: 5rem 0;
@@ -264,4 +264,33 @@ time {
 
 .social-media svg {
     height: 3rem;
+}
+
+/* Post list */
+
+.post-list {
+    margin: 0;
+    padding: 0;
+}
+
+.post-list__item {
+    display: block;
+    margin: 5rem 0 0;
+}
+
+.post-list__item-title {
+    font-size: 1.1em;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 200%;
+}
+
+.post-list__item-description {
+    display: block;
+    margin: 0 0 0;
+}
+
+.post-list__item-date {
+    color: var(--color-text-secondary);
+    display: block;
 }

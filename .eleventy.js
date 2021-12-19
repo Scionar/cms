@@ -6,6 +6,10 @@ module.exports = (eleventyConfig) => {
       return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
     });
 
+    eleventyConfig.addFilter("humanDateString", dateObj => {
+      return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy LLL dd");
+    });
+
     eleventyConfig.addCollection("posts", function(collection) {
     
       /* The posts collection includes all posts that list 'posts' in the front matter 'tags'
