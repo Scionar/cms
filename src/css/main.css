@@ -330,6 +330,7 @@ footer {
 
 .introduction-block__name {
     flex: 1 0 auto;
+    text-align: center;
     width: 100%;
 }
 
@@ -338,20 +339,32 @@ footer {
     border-radius: 1rem;
     flex: 0 0 auto;
     height: 10em;
+    margin: 0 auto;
     width: 10em;
-}
-
-.introduction-block__photo:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
 }
 
 .introduction-block__content {
     flex: 0 1 auto;
-    padding: 0 0 0 2em;
-    width: calc(100% - 10em); 
+    padding: 2em 0 0;
+    text-align: center;
+    width: 100%; 
 }
+
+@media only screen and (min-width: 30em) {
+    .introduction-block__name {
+        text-align: left;
+    }
+
+    .introduction-block__photo {
+        margin: 0;
+    }
+
+    .introduction-block__content {
+        padding: 0 0 0 2em;
+        text-align: left;
+        width: calc(100% - 10em); 
+    }
+} 
 
 .introduction-block__content p {
     margin: 0;
