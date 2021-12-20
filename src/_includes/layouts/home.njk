@@ -5,7 +5,11 @@ templateClass: tmpl-home
 
 {# The Home page uses this template–it extends the base template #}
 
-{{ content | safe }}
+<header class="introduction-block">
+  <h1 class="introduction-block__name">{{ title }}</h1>
+  <div aria-hidden="true" class="introduction-block__photo"></div>
+  <span class="introduction-block__content">{{ content | safe }}</span>
+</header>
 
 {# After the the content defined in index.md, list the blog posts in the collection #}
 <ul class="post-list">
