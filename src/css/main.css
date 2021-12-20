@@ -73,6 +73,14 @@ article p {
     line-height: 1.8;
 }
 
+pre {
+    background-color: #f1f4f8;
+    border-radius: 0.5rem;
+    padding: 2em;
+    max-width: 100%;
+    overflow-x: scroll;
+}
+
 /* Link */
 
 a:link {
