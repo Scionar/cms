@@ -13,6 +13,7 @@
     --color-text: #404040;
     --color-text-secondary: #767777; 
     --color-background: #FFFFFF;
+    --color-code-background: #f1f4f8;
 
     --size-max-content-width: 75rem;
     --size-header-height: 7rem;
@@ -30,6 +31,7 @@
         --color-text: #f0f0f0;
         --color-text-secondary: #8D8E8E; 
         --color-background: #1a1a1a;
+        --color-code-background: #414a58;
     }
 }
 
@@ -74,7 +76,7 @@ article p {
 }
 
 pre {
-    background-color: #f1f4f8;
+    background-color: var(--color-code-background);
     border-radius: 0.5rem;
     padding: 2em;
     max-width: 100%;
